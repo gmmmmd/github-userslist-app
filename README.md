@@ -1,3 +1,3 @@
 ### `npm install`
 ### `npm start`
-[ссылка](https://github-indol.vercel.app/)
+[https://github-indol.vercel.app/](https://github-indol.vercel.app/)
