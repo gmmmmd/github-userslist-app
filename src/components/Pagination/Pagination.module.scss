@@ -1,0 +1,23 @@
+.Pagination {
+  padding: 0 0 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  &__page {
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 
+      background-color 0.4s ease-in, 
+      border-radius 0.4s ease-in;
+
+    &:hover {
+      background-color: #b1b4c5;
+      border-radius: 100%;
+    }
+
+    &_current {
+      font-weight: 700;
+    }
+  }
+}

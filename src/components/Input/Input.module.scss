@@ -1,0 +1,11 @@
+.Input {
+  border: none;
+  color: black;
+  font-weight: 700;
+  font-size: 22px;
+  width: 100%;
+
+  &::placeholder {
+    font-size: 12px;
+  }
+}
