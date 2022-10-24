@@ -55,7 +55,7 @@ const Modal = () => {
                     alt={user.login}
                     className={styles.Modal__img}
                   />
-                  <h1>{user.login}</h1>
+                  <h1 className={styles.Modal__title}>{user.login}</h1>
                   <div className={styles.Modal__follow}>
                     {user.followers && <span>followers: {user.followers}</span>}
                     {user.following && <span>following: {user.following}</span>}
@@ -63,7 +63,9 @@ const Modal = () => {
                 </div>
                 <div className={styles.Modal__userInfo}>
                   <div className={styles.Modal__name}>
-                    {user.name && <h2>{user.name}</h2>}
+                    {user.name && (
+                      <h2 className={styles.Modal__subtitle}>{user.name}</h2>
+                    )}
                     {user.location && <span>{user.location}</span>}
                   </div>
                   <div className={styles.Modal__otherInfo}>
@@ -95,7 +97,11 @@ const Modal = () => {
                         </a>
                       </div>
                     )}
-                    {user.company && <span>company: {user.company}</span>}
+                    {user.company && (
+                      <span className={styles.Modal__company}>
+                        company: {user.company}
+                      </span>
+                    )}
                   </div>
                 </div>
                 <Button
